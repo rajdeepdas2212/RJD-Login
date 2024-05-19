@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body{
+                text-align: center;
+                justify-content: center;
+                background-color: #000;
+                color: #fff;
+            }
+            .container{
+                padding-top: 10%;
+                padding-left: 20px;
+            }
+            .box{
+                width: 320px;
+                height: 320px;
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 0px 0px 90px cyan;
+                animation: animate 1s linear infinite;
+            }
+            @keyframes animate{
+                100%{
+                    filter: hue-rotate(360deg);
+                }
+            }
+            input{
+                width: 240px;
+                height: 16px;
+                margin-top: 30px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #fff;
+                color: #fff;
+            }
+            ::placeholder{
+                color: #fff;
+                font-size: 12px;
+            }
+            .login{
+                width: 260px;
+                height: 30px;
+                margin-top: 50px;
+                border: none;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 50px;
+                color: #000;
+                background-color: #0ef;
+                box-shadow: 0px 0px 22px #0ef;
+                animation: animate 1s linear infinite;
+            }
+            h2{
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            .link{
+                color: #ededed;
+                text-align: right;
+                transform: translate(-30px);
+                text-decoration-line: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <div class="container">
+            <div class="box">
+                <h2>Login</h2>
+                <div class="text">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="text">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <button id="login" class="login">Login</button>
+                </div><br>
+                <div class="link">
+                   <a href="index.html" class="link">Register Here</a>
+                </div>
+            </div>
+        </div>
+    </center>
+    </body>
+</html>
